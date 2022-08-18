@@ -14,6 +14,9 @@
 		E7DD4A5928A9DAA500673CFD /* Swift_Learning_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD4A5828A9DAA500673CFD /* Swift_Learning_AppTests.swift */; };
 		E7DD4A6328A9DAA500673CFD /* Swift_Learning_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD4A6228A9DAA500673CFD /* Swift_Learning_AppUITests.swift */; };
 		E7DD4A6528A9DAA500673CFD /* Swift_Learning_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD4A6428A9DAA500673CFD /* Swift_Learning_AppUITestsLaunchTests.swift */; };
+		E7FE392F28AC4BAD007058BC /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE392E28AC4BAD007058BC /* WeatherForecast.swift */; };
+		E7FE393128AC4CF7007058BC /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE393028AC4CF7007058BC /* WeatherResponse.swift */; };
+		E7FE393328ADDCDE007058BC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE393228ADDCDE007058BC /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		E7DD4A5E28A9DAA500673CFD /* Swift-Learning-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Learning-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DD4A6228A9DAA500673CFD /* Swift_Learning_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Learning_AppUITests.swift; sourceTree = "<group>"; };
 		E7DD4A6428A9DAA500673CFD /* Swift_Learning_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Learning_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E7FE392D28AA1396007058BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E7FE392E28AC4BAD007058BC /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		E7FE393028AC4CF7007058BC /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		E7FE393228ADDCDE007058BC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,14 @@
 		E7DD4A4628A9DAA300673CFD /* Swift-Learning-App */ = {
 			isa = PBXGroup;
 			children = (
+				E7FE392D28AA1396007058BC /* Info.plist */,
 				E7DD4A4728A9DAA300673CFD /* Swift_Learning_AppApp.swift */,
 				E7DD4A4928A9DAA300673CFD /* ContentView.swift */,
 				E7DD4A4B28A9DAA500673CFD /* Assets.xcassets */,
 				E7DD4A4D28A9DAA500673CFD /* Preview Content */,
+				E7FE392E28AC4BAD007058BC /* WeatherForecast.swift */,
+				E7FE393028AC4CF7007058BC /* WeatherResponse.swift */,
+				E7FE393228ADDCDE007058BC /* LocationManager.swift */,
 			);
 			path = "Swift-Learning-App";
 			sourceTree = "<group>";
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FE392F28AC4BAD007058BC /* WeatherForecast.swift in Sources */,
 				E7DD4A4A28A9DAA300673CFD /* ContentView.swift in Sources */,
+				E7FE393328ADDCDE007058BC /* LocationManager.swift in Sources */,
 				E7DD4A4828A9DAA300673CFD /* Swift_Learning_AppApp.swift in Sources */,
+				E7FE393128AC4CF7007058BC /* WeatherResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +434,9 @@
 				DEVELOPMENT_TEAM = A7Z7B8FU42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-Learning-App/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location for the weather app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use you location for the weather app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +466,9 @@
 				DEVELOPMENT_TEAM = A7Z7B8FU42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-Learning-App/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We use your location for the weather app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use you location for the weather app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
