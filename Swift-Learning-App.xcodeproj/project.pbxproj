@@ -14,6 +14,7 @@
 		E7DD4A5928A9DAA500673CFD /* Swift_Learning_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD4A5828A9DAA500673CFD /* Swift_Learning_AppTests.swift */; };
 		E7DD4A6328A9DAA500673CFD /* Swift_Learning_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD4A6228A9DAA500673CFD /* Swift_Learning_AppUITests.swift */; };
 		E7DD4A6528A9DAA500673CFD /* Swift_Learning_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DD4A6428A9DAA500673CFD /* Swift_Learning_AppUITestsLaunchTests.swift */; };
+		E7DF749128AE5EAB00BFFA8C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DF749028AE5EAB00BFFA8C /* DetailView.swift */; };
 		E7FE392F28AC4BAD007058BC /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE392E28AC4BAD007058BC /* WeatherForecast.swift */; };
 		E7FE393128AC4CF7007058BC /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE393028AC4CF7007058BC /* WeatherResponse.swift */; };
 		E7FE393328ADDCDE007058BC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE393228ADDCDE007058BC /* LocationManager.swift */; };
@@ -47,6 +48,7 @@
 		E7DD4A5E28A9DAA500673CFD /* Swift-Learning-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-Learning-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DD4A6228A9DAA500673CFD /* Swift_Learning_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Learning_AppUITests.swift; sourceTree = "<group>"; };
 		E7DD4A6428A9DAA500673CFD /* Swift_Learning_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Learning_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E7DF749028AE5EAB00BFFA8C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E7FE392D28AA1396007058BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E7FE392E28AC4BAD007058BC /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
 		E7FE393028AC4CF7007058BC /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E7FE392E28AC4BAD007058BC /* WeatherForecast.swift */,
 				E7FE393028AC4CF7007058BC /* WeatherResponse.swift */,
 				E7FE393228ADDCDE007058BC /* LocationManager.swift */,
+				E7DF749028AE5EAB00BFFA8C /* DetailView.swift */,
 			);
 			path = "Swift-Learning-App";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7FE392F28AC4BAD007058BC /* WeatherForecast.swift in Sources */,
+				E7DF749128AE5EAB00BFFA8C /* DetailView.swift in Sources */,
 				E7DD4A4A28A9DAA300673CFD /* ContentView.swift in Sources */,
 				E7FE393328ADDCDE007058BC /* LocationManager.swift in Sources */,
 				E7DD4A4828A9DAA300673CFD /* Swift_Learning_AppApp.swift in Sources */,
