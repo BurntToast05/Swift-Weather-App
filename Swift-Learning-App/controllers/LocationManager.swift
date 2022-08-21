@@ -17,7 +17,7 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
     @Published var weather: WeatherResponse?
     @Published var userTown: String = ""
     @Published var weatherForecast: WeatherForecast?
-
+    @Published var loading: Bool = true
 
     override init() {
         super.init()
@@ -72,7 +72,7 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
             self.location = location.coordinate
             self.getTown(lat: CLLocationDegrees.init(location.coordinate.latitude), long: CLLocationDegrees.init(location.coordinate.longitude))
             self.getCurrentWeather(latitude: location.coordinate.latitude.description, longitude: location.coordinate.longitude.description )
-            self.getWeatherForecase(latitude: location.coordinate.latitude.description, longitude: location.coordinate.longitude.description)
+            self.getWeatherForecast(latitude: location.coordinate.latitude.description, longitude: location.coordinate.longitude.description)
         }
     
     }
@@ -82,12 +82,12 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
             let (data, _) = try await URLSession.shared.data(from: URL(string:"https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=\(String(describing: latitude))&lon=\(String(describing: longitude))&appid=a6c879a1a35422eec93b5702a4ae4aaf")!)
             let decodedResponse = try? JSONDecoder().decode(WeatherResponse.self, from: data)
             DispatchQueue.main.async {
-                self.weather = decodedResponse
+                self.weather = decodedResponse;
             }
         }
     }
     
-    func getWeatherForecase(latitude: String, longitude: String) {
+    func getWeatherForecast(latitude: String, longitude: String) {
         Task {
             do {
             let (data, _) = try await URLSession.shared.data(from: URL(string:"https://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=\(String(describing: latitude))&lon=\(String(describing: longitude))&appid=a6c879a1a35422eec93b5702a4ae4aaf")!)
@@ -95,6 +95,8 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
             let decodedResponse = try JSONDecoder().decode(WeatherForecast.self, from: data);
                 DispatchQueue.main.async {
                     self.weatherForecast = decodedResponse
+                    self.loading = false;
+
                 }
             }
             catch {
