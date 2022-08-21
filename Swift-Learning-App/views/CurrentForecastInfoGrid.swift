@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrentForecastInfoGrid: View {
-    var weather: WeatherResponse?
+    var weather: CurrentWeatherResponse?
 
     var body: some View {
         VStack(alignment: .leading) {

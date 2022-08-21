@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct WeatherForecast: Codable {
+struct HourlyForecastResponse: Codable {
     let cod: String
     let message, cnt: Int
     let list: [WeatherList]

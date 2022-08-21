@@ -17,7 +17,7 @@ import SwiftUI
 import SwiftUI
 
 struct CurrentForecastInfoView: View {
-    var weather: WeatherResponse?
+    var weather: CurrentWeatherResponse?
 
     var body: some View {
         ZStack {
